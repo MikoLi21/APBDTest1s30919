@@ -15,14 +15,6 @@ public class VisitsController : ControllerBase
     {
         _visitService = visitService;
     }
-
-    [HttpGet("{id}"]
-    public async Task<ActionResult<VisitResponseDto>> GetVisitById(int id)
-    {
-        var visit=await _visitService.GetVisitDetailsAsync(id);
-        if ()
-    }
-    
     
     
     
