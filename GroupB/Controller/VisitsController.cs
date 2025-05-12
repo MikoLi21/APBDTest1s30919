@@ -17,7 +17,6 @@ public class VisitsController : ControllerBase
     }
     
     
-    
     [HttpGet("{id}")]
     public async Task<ActionResult<VisitResponseDto>> GetVisitById(int id)
     {

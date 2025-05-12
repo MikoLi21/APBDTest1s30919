@@ -77,7 +77,6 @@ public class VisitService : IVisitService
         var client = await _clientRepository.GetClientByIdAsync(request.ClientId);
         if (client == null)
             return "Client does not exist.";
-
         
         var mechanic = await _mechanicRepository.GetMechanicByLicenceAsync(request.MechanicLicenceNumber);
         if (mechanic == null)
